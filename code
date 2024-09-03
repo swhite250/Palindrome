@@ -1,0 +1,17 @@
+public class Palindrome{
+  public static main (String[] args){
+    String yd = "aacaa";
+  }
+public static boolean isPalindrome (String vals){
+  int left = 0;
+  int  right = vals.length-1;
+  while (left<right){
+    if (vals.charAt(left) == vals.charAt(right)){
+      left++;
+      right--;
+  }
+  else{
+    return false;
+  }
+  return true;
+}  
